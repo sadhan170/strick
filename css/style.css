@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+body{
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
+}
+nav{
+        background-color: #f6f9f9;
+    padding-top: 20px!important;
+    padding-bottom: 20px!important;
+}
+.nav-link {
+    display: block;
+    padding: .5rem 18px;
+    text-decoration: none;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+    font-size: 16px;
+    color: #2d3950;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.nav-link:hover{
+        color: #15a4fa;
+}
+
+header{
+    background-image: url(../images/banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    position: relative;
+}
+header .row{
+    min-height: 530px;
+}
+header h1{
+    font-size: 108px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 20px;
+}
+header p{
+    color: #fff;
+    font-size: 16px;
+    margin-bottom: 28px;
+}
+header span{
+    width: 100%;
+    background: #15a4fa;
+    height: 2px;
+    display: block;
+    margin-bottom: 20px;
+}
+header button{
+    border: 1px solid #15a4fa!important;
+    border-radius: 5px!important;
+    background-color: transparent!important;
+    font-size: 18px!important;
+    color: #fff!important;
+    padding: 8px 30px!important;
+}
+header a{
+    color: #fff;
+    font-size: 20px;
+    display: block;
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform:translateX(-50%);
+    -webkit-transform:translateX(-50%);
+    -moz-transform: translateX(-50%);
+
+    animation: move;
+    animation-duration: 3s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+    animation-fill-mode: backwards;
+    animation-direction: alternate;    
+}
+@keyframes move{
+    0%{
+        bottom: 30px;
+    }
+    100%{
+        bottom: 50px;
+    }
+}
+header a:hover{
+    
+    color: #fff;
+
+}
+.about-section{
+    text-align: center;
+    background: #F6F9F9;
+    padding-top: 79px;
+    padding-bottom: 92px;
+}
+.about-section h1{
+    color: #2d3950;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.about-section p{
+    max-width: 793px;
+    margin: auto;
+    color: #999999;
+    font-size: 15px;
+    line-height: 1.7;
+}
+.service-section{
+    padding: 67px 0;
+}
+
+.service{
+    text-align: center;
+}
+.service span{/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#207cca+50,48baff+50,5fc3ff+50,2989d8+50 */
+    background: #207cca; /* Old browsers */
+    background: -moz-linear-gradient(left,  #207cca 50%, #48baff 50%, #5fc3ff 50%, #2989d8 50%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left,  #207cca 50%,#48baff 50%,#5fc3ff 50%,#2989d8 50%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right,  #207cca 50%,#48baff 50%,#5fc3ff 50%,#2989d8 50%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#207cca', endColorstr='#2989d8',GradientType=1 ); /* IE6-9 */
+    height: 100px;
+    width: 100px;
+    display: block;
+    line-height: 100px;
+    margin: auto;
+    color: #fff;
+    font-size: 40px;
+    text-shadow: 0 1px 4px #5d5555d6;
+}
+.service span i{
+}
+.service h2{
+    color: #2d3950;
+    font-size: 22px;
+    margin-top: 20px;
+}
+.service p{margin-bottom: 10px;color: #999999;font-size: 15px;}
+
+.showcase-section{
+    text-align: center;
+    background: #f6f9f9;
+    padding: 120px 0;
+}
+.showcase{position: relative;margin-bottom: 23px;}
+
+.showcase::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #15a4fa;
+    
+    transition-duration: 0.5s;
+    transform: scale(0);
+    opacity: 0;
+}
+.showcase:hover::before{
+    transform: scale(1);
+    opacity: 0.7;
+    
+
+}
+.showcase img{}
+.showcase ul{
+    position: absolute;
+    bottom: 40%;
+    left: 50%;
+    transform: translate(-50%, 40%);
+    opacity: 0;
+    transition-duration: .5s;
+}
+.showcase:hover ul{
+    opacity: 1;
+    bottom: 50%;
+    transform: translate(-50%, 50%);
+}
+.showcase ul li{
+    padding: 3px;
+}
+.showcase ul li a{
+    color: #fff;
+    border: 1px solid #fff;
+    width: 30px;
+    height: 30px;
+    display: block;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 3px;
+    font-size: 14px;
+    transition: .4s;
+    
+}
+.showcase ul li a:hover{
+    opacity: 0.4;
+ 
+}
+
+.contact-section {
+    background-image: url(../images/contract.jpg);
+    overflow: hidden;
+    position: relative;
+}
+.contact-section span {
+    display: block;
+    background: #2c364b;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+}
+.contact-row {
+    min-height: 700px;
+    align-items: center;
+}
+.contact-section h2 {
+    font-size: 41px;
+    color: #fff;
+    letter-spacing: 0.25px;
+}
+.contact-section p {
+    font-size: 15px;
+    color: #fff;
+    margin-bottom: 50px;
+    letter-spacing: 0.25px;
+}
+.form-control {
+    background: #3f495d4a;
+   border: 1px solid #999999;
+}
+.subscribe {
+    margin: 0;
+    padding-left: 15px;
+    color: #fff;
+    font-size: 15px;
+    letter-spacing: 0.25px;
+}
+.contact-section li {
+    display: flex;
+    align-items: center;
+}
+.btn {
+    font-size: 18px;
+    border: 1px solid #15a4fa;
+    color: #fff;
+    background-color: transparent;
+    transition-duration: 0.4s;
+    border-radius: 4px;
+    height: 40px;
+    width: 135px;
+}
+
+.btn:hover {
+    background: #15a4fa;
+}
